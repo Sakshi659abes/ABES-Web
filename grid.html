@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-areas: 
+            "header header"
+            "menu content"
+            "footer footer";
+            grid-template-columns: 1fr 3fr;
+            gap:3px;
+            background-color: coral;
+            padding: 5px;
+        }
+        .h1{
+            color: black;
+        }
+        /* .header{
+            text-align: center;
+
+        } */
+         .container{
+            text-align: center;
+            font-size: medium;
+            font-style: normal;
+            grid-template-columns: auto;
+            grid-template-areas: initial;
+           
+         }
+
+        .footer{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="h1" style="text-align: center;"><h1>Grid Layout</h1></div>
+    <h1 align="center">ABES Engineering College</h1>
+    <h2 align="center">MCA Department</h2>
+    <div class="container">
+        <div class="header" ><h2>WELCOME TO ABES</h2></div>
+        <div class="menu">
+          
+  <div class="content">
+    <table border="0" align="center" >
+<tr><td>Email </td><td><input type="email" name="email"></td></tr> 
+<tr><td>Password</td><td><input type="password" name="password"></td></tr>
+<a href="https://www.pexels.com/search/pet/">DOG PET</a><br><a href="https://4kwallpapers.com/Hindu-God">God </a><br><a href="https://www.pexels.com/search/sport/">Sports</a></div>
+<tr><td></td><td><input type="submit" value="Login"></td></tr>   
+</table>
+</div>
+  <div class="footer" ><h4>Thank You</h4></div>
+  
+        </div>
+    </div>
+</body>
+</html>
