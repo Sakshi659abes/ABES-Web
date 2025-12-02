@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f6fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #074d64;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+header h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #e3f2fd;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #d2199b;
+}.links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+links a:hover {
+  color: #ffeb3b;
+}
+
+/* Buttons */
+.buttons a {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+sign-in:hover {
+  background: #64b5f6;
+}
+
+.sign-up {
+  background: #ffeb3b;
+  color: #0d47a1;
+}
+
+.sign-up:hover {
+  background: #fbc02d;
+}
+
+/* Hamburger Menu */
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    background: #1976d2;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  #menu-toggle:checked + .hamburger-btn + .links {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    display: block;
+    color: white;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+
+
+
+
+/* Carousel */
+.carousel {
+   position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 400px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Inner Slide Container */
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slide 12s infinite;
+    }
+
+    /* Each Slide */
+    .slide {
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slide1 {
+      background-image: url('https://amitmedicalgroup.com.au/wp-content/uploads/2020/12/113.jpg'); width: 1000px;
+    }
+    .slide2 {
+      background-image: url('https://c8.alamy.com/comp/MNNBK1/software-engineer-touching-the-transparent-screen-and-feeling-interested-MNNBK1.jpg');width: 1000px;
+    }
+    .slide3 {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/027/105/968/large_2x/legal-law-and-justice-concept-open-law-book-with-a-wooden-judges-gavel-in-a-courtroom-or-law-enforcement-office-free-photo.jpg');width: 1000px;
+    }
+
+    /* Overlay Text */
+    .text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1.5em;
+    }
+
+    /* Animation for sliding */
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      30% { transform: translateX(0); }
+      35% { transform: translateX(-100%); }
+      65% { transform: translateX(-100%); }
+      70% { transform: translateX(-200%); }
+      95% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1000px;
+  gap: 20px;
+}
+
+.category {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+}
+
+.category h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #004aad;
+  color: white;
+ padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0078ff;
+}
+
+/* Footer */
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #004aad;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.1rem;
+}
+
+.college-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.college-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.college-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+college-card h2 {
+  font-size: 1.4rem;
+  color: #004aad;
+  margin: 15px 0 5px;
+}
+
+.college-card p {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f37125;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0066ff;
+}
+
+footer {
+  text-align: center;
+  background: #ed3da1;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+} 
+  
