@@ -1,0 +1,22 @@
+#navbar{
+    background-color: black;
+    color: white;
+}
+#logo{
+    color: rgb(244, 50, 7);
+}
+a{
+    margin-right: 200px;
+}
+button{
+    background-color: rgb(255, 115, 0);
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    display:inline-block;
+}
+footer{
+    background-color:rgb(240, 16, 16)
+}
